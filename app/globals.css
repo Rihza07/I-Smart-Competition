@@ -2704,3 +2704,119 @@ nav .nav-container {
   margin: 0;
   color: #00f2fe;
 }
+
+/* ================= FOOTER ================= */
+
+.footer {
+  background: linear-gradient(135deg, #0b0b0f, #15001f);
+  padding: 80px 0 30px;
+  border-top: 1px solid rgba(192, 132, 252, 0.25);
+  position: relative;
+}
+
+.footer-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 50px;
+}
+
+.footer-brand h3 {
+  font-family: "Press Start 2P", cursive;
+  font-size: 1.2rem;
+  color: #c084fc;
+  margin-bottom: 20px;
+}
+
+.footer-brand p {
+  font-size: 0.9rem;
+  line-height: 1.7;
+  color: #d1d1d1;
+  margin-bottom: 25px;
+}
+
+.footer-links h4 {
+  font-size: 1rem;
+  margin-bottom: 20px;
+  color: #c084fc;
+}
+
+.footer-links ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-links ul li {
+  margin-bottom: 12px;
+  font-size: 0.9rem;
+  color: #bbb;
+}
+
+.footer-links ul li a {
+  color: #bbb;
+  text-decoration: none;
+  transition: 0.3s ease;
+}
+
+.footer-links ul li a:hover {
+  color: #c084fc;
+  padding-left: 6px;
+}
+
+/* Social Icons */
+.footer-socials {
+  display: flex;
+  gap: 15px;
+}
+
+.footer-socials a {
+  width: 40px;
+  height: 40px;
+  background: rgba(192, 132, 252, 0.1);
+  border: 1px solid rgba(192, 132, 252, 0.4);
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #c084fc;
+  transition: 0.3s ease;
+}
+
+.footer-socials a:hover {
+  background: #c084fc;
+  color: #fff;
+  transform: translateY(-3px);
+  box-shadow: 0 8px 25px rgba(192, 132, 252, 0.4);
+}
+
+/* Bottom */
+.footer-bottom {
+  margin-top: 60px;
+  padding-top: 20px;
+  text-align: center;
+  border-top: 1px solid rgba(192, 132, 252, 0.2);
+}
+
+.footer-bottom p {
+  font-size: 0.85rem;
+  color: #999;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .footer {
+    padding: 60px 0 20px;
+  }
+
+  .footer-container {
+    gap: 35px;
+  }
+
+  .footer-brand,
+  .footer-links {
+    text-align: center;
+  }
+
+  .footer-socials {
+    justify-content: center;
+  }
+}

@@ -5,12 +5,12 @@ export default function Header() {
     <nav>
         <div className="container nav-container">
             <h1 className="logo">OS-Cendekia</h1>
-
+{/* 
             <div className="hamburger" id="hamburgerBtn">
                 <span></span>
                 <span></span>
                 <span></span>
-            </div>
+            </div> */}
 
             <ul className="nav-links" id="navLinks">
                 <li><a href="#home">Home</a></li>
