@@ -2820,3 +2820,142 @@ nav .nav-container {
     justify-content: center;
   }
 }
+
+.slider-3d {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.carousel-container {
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+}
+
+.carousel-track {
+  display: flex;
+  gap: 40px;
+  transition: transform 0.6s ease;
+  padding: 40px 0;
+}
+
+.carousel-slide {
+  width: 300px;
+  flex-shrink: 0;
+  background: linear-gradient(145deg, #111, #1a1a1f);
+  border-radius: 20px;
+  padding: 20px;
+  text-align: center;
+  transition: all 0.5s ease;
+  opacity: 0.4;
+  transform: scale(0.85);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.6);
+}
+
+.carousel-slide img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+  border-radius: 15px;
+}
+
+.carousel-slide h3 {
+  margin-top: 15px;
+  color: white;
+}
+
+/* Slide aktif */
+.carousel-slide.active {
+  opacity: 1;
+  transform: scale(1.1);
+  box-shadow: 0 25px 60px rgba(128, 0, 255, 0.5);
+}
+.faq {
+  padding: 80px 0;
+}
+
+.faq-item {
+  background: linear-gradient(145deg, #111018, #0c0b13);
+  border: 1px solid rgba(150, 100, 255, 0.2);
+  border-radius: 20px;
+  margin-bottom: 25px;
+  overflow: hidden;
+  transition: all 0.4s ease;
+}
+
+.faq-item.active {
+  border-color: rgba(150, 100, 255, 0.6);
+  box-shadow: 0 0 30px rgba(150, 100, 255, 0.15);
+}
+
+.faq-question {
+  width: 100%;
+  padding: 25px 30px;
+  margin-left: 5px;
+  background: none;
+  border: none;
+  color: white;
+  font-size: 1.1rem;
+  font-weight: 600;
+  text-align: left;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+}
+
+.faq-answer {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.5s ease, opacity 0.4s ease;
+  opacity: 0;
+}
+
+.faq-answer-content {
+  padding: 0 30px 25px 30px;
+  color: #cfcfe8;
+  line-height: 1.6;
+}
+
+.faq-item.active .faq-answer {
+  max-height: 300px;
+  opacity: 1;
+}
+
+/* ICON MODERN PLUS */
+
+.icon {
+  width: 18px;
+  height: 18px;
+  position: relative;
+}
+
+.icon::before,
+.icon::after {
+  content: "";
+  position: absolute;
+  background: #a970ff;
+  transition: all 0.3s ease;
+}
+
+.icon::before {
+  width: 100%;
+  height: 2px;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+}
+
+.icon::after {
+  height: 100%;
+  width: 2px;
+  left: 50%;
+  top: 0;
+  transform: translateX(-50%);
+}
+
+.faq-item.active .icon::after {
+  transform: translateX(-50%) scaleY(0);
+}
