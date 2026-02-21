@@ -64,7 +64,7 @@ export default function Hero() {
           </div>
         </div>
 
-        <div className="hero-actions">
+        <div className="hero-actions btn-regis">
           <Link href="/register" className="btn">
             Daftar Sekarang
           </Link>

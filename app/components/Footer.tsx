@@ -32,7 +32,7 @@ export default function Footer() {
             </a>
           </div>
         </div>
-        \
+
         <div className="footer-links">
           <h4>Quick Links</h4>
           <ul>

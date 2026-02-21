@@ -11,7 +11,7 @@ export default function Competition() {
     { title: "LCT Matematika", img: "/image/lct-mtk.jpeg" },
     { title: "Debat Bahasa Indonesia", img: "/image/debat-indo.jpeg" },
     { title: "Debat Bahasa Inggris", img: "/image/debat-inggris.jpeg" },
-    { title: "Vlog 3 Menit", img: "/image/vlog.jpeg" },
+    { title: "Short Movie", img: "/image/vlog.jpeg" },
     { title: "Story Telling", img: "/image/storytelling.jpeg" },
     { title: "Poster", img: "/image/poster.jpeg" },
     { title: "Song Cover", img: "/image/song-cover.jpeg" },
