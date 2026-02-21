@@ -61,7 +61,7 @@ nav .nav-container {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 15px 0;
+  padding: 25px 0;
 }
 
 
@@ -1303,7 +1303,8 @@ nav .nav-container {
   background: linear-gradient(135deg, var(--purple), var(--purple-dark));
   color: white;
   border: none;
-  padding: 12px 30px;
+height: auto;
+  padding: 20px 70px;
   border-radius: 50px;
   cursor: pointer;
   font-weight: 700;
@@ -2836,6 +2837,7 @@ nav .nav-container {
 
 .carousel-track {
   display: flex;
+  height: auto;
   gap: 40px;
   transition: transform 0.6s ease;
   padding: 40px 0;

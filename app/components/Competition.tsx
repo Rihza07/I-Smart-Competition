@@ -1,5 +1,5 @@
-'use client'
-import { useState } from "react"
+"use client";
+import { useState } from "react";
 
 export default function Competition() {
   const slides = [
@@ -18,20 +18,18 @@ export default function Competition() {
     { title: "Pidato Bahasa Daerah", img: "/image/pidato-daerah.jpeg" },
     { title: "Menari", img: "/image/menari.jpeg" },
     { title: "Sang Juara", img: "/image/sang-juara.jpeg" },
-    { title: "Catur", img: "/image/catur.jpeg" }
-  ]
+    { title: "Catur", img: "/image/catur.jpeg" },
+  ];
 
-  const [current, setCurrent] = useState(0)
+  const [current, setCurrent] = useState(0);
 
   const nextSlide = () => {
-    setCurrent((prev) => (prev + 1) % slides.length)
-  }
+    setCurrent((prev) => (prev + 1) % slides.length);
+  };
 
   const prevSlide = () => {
-    setCurrent((prev) =>
-      prev === 0 ? slides.length - 1 : prev - 1
-    )
-  }
+    setCurrent((prev) => (prev === 0 ? slides.length - 1 : prev - 1));
+  };
 
   return (
     <section id="competition" className="competition">
@@ -39,37 +37,36 @@ export default function Competition() {
         <h2 className="font">Cabang Lomba</h2>
 
         <div className="slider-3d">
-        <button className="nav prev" onClick={prevSlide}>
+          <button className="nav prev" onClick={prevSlide}>
             &#10094;
-        </button>
+          </button>
 
-        <div className="carousel-container">
+          <div className="carousel-container">
             <div
-            className="carousel-track"
-            style={{
-                transform: `translateX(calc(50% - ${current * 320 + 160}px))`
-            }}
+              className="carousel-track"
+              style={{
+                transform: `translateX(calc(50% - ${current * 335 + 160}px))`,
+              }}
             >
-            {slides.map((slide, index) => (
+              {slides.map((slide, index) => (
                 <div
-                className={`carousel-slide ${
+                  className={`carousel-slide ${
                     index === current ? "active" : ""
-                }`}
-                key={index}
+                  }`}
+                  key={index}
                 >
-                <img src={slide.img} alt={slide.title} />
-                <h3>{slide.title}</h3>
+                  <img src={slide.img} alt={slide.title} />
+                  <h3>{slide.title}</h3>
                 </div>
-            ))}
+              ))}
             </div>
-        </div>
+          </div>
 
-        <button className="nav next" onClick={nextSlide}>
+          <button className="nav next" onClick={nextSlide}>
             &#10095;
-        </button>
+          </button>
         </div>
-
       </div>
     </section>
-  )
+  );
 }
