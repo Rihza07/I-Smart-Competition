@@ -2961,3 +2961,48 @@ height: auto;
 .faq-item.active .icon::after {
   transform: translateX(-50%) scaleY(0);
 }
+
+
+.select-wrapper {
+  position: relative;
+}
+
+.select-wrapper::after {
+  content: "▾";
+  position: absolute;
+  right: 14px;
+  top: 50%;
+  transform: translateY(-50%);
+  pointer-events: none;
+  font-size: 14px;
+  color: #6b7280;
+}
+
+
+.form-input {
+  height: auto;
+  width: 100%;
+  padding: 12px 14px;
+  border: 1px solid #444;
+  border-radius: 8px;
+  background-color: #120a16;
+  font-size: 16px;
+  font-family: inherit;
+  color: #b7b7b7; /* ← TEXT PUTIH */
+  outline: none;
+  transition: all 0.2s ease;
+
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+}
+
+.form-input:focus {
+  border-color: #7c3aed;
+  background-color: #120a16;
+}
+
+.form-input::placeholder {
+  color: #cccccc;
+}
+
