@@ -36,6 +36,10 @@ export default function Hero() {
     return () => clearInterval(interval);
   }, [targetDate]);
 
+  const openLink = () => {
+    window.open("https://forms.gle/PMrYPtqGh6fMAnJm6", "_blank");
+  };
+
   return (
     <section className="hero fade-in">
       <div className="container">
@@ -65,9 +69,9 @@ export default function Hero() {
         </div>
 
         <div className="hero-actions btn-regis">
-          <Link href="/register" className="btn">
+          <a href="#" className="btn" onClick={openLink}>
             Daftar Sekarang
-          </Link>
+          </a>
         </div>
       </div>
     </section>

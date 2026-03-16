@@ -11,15 +11,24 @@ export default function Guest() {
         <div className="guest-wrapper">
           <div className="guest-card highlight">
             <center>
-              <img src="https://imgs.search.brave.com/ahub9X_KpFQD9XrWGOG2xJP79LlkYPmsQoyDy2CsjPM/rs:fit:500:0:1:0/g:ce/aHR0cHM6Ly9hc3Nl/dC50cmlidW5uZXdz/LmNvbS9rZmdlcnFz/Y1RPaHhERGswWEIw/REsxcmY3WFU9LzEy/MDB4Njc1L2ZpbHRl/cnM6dXBzY2FsZSgp/OnF1YWxpdHkoMzAp/OmZvcm1hdCh3ZWJw/KTpmb2NhbCgwLjV4/MC41OjAuNXgwLjUp/L3RyaWJ1bm5ld3Mv/Zm90by9iYW5rL29y/aWdpbmFscy9KdWxl/LVNlbGluZ2t1aC5q/cGc" />
+              <img
+                src="./image/Shakira-Amirah.jpg"
+                alt="Shakira Amirah"
+                width={200}
+                height={200}
+              />
             </center>
-            <h3>Jule</h3> <span>Content Creator Edukasi</span>
+            <h3>Shakira Amirah</h3>{" "}
+            <span>Mahasiswa Kedokteran Universitas Indonesia</span>
             <p>
               {" "}
-              Jule dikenal sebagai figur edukatif yang aktif mempopulerkan
-              pembelajaran matematika dan sains secara kreatif. Kehadirannya
-              diharapkan dapat memberikan inspirasi akademik, semangat belajar,
-              serta wawasan global bagi peserta kompetisi.{" "}
+              Shakira Amirah adalah mahasiswi berprestasi dari Fakultas
+              Kedokteran Universitas Indonesia yang dikenal sebagai pemenang
+              Clash of Champions 2024. Selain unggul secara akademik dan
+              terlibat dalam publikasi ilmiah internasional, ia juga aktif
+              sebagai influencer edukasi yang membagikan konten motivasi tentang
+              pendidikan, riset medis, dan pengembangan diri bagi pelajar
+              Indonesia.{" "}
             </p>
           </div>
         </div>
